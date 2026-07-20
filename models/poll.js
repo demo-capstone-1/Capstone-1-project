@@ -2,7 +2,7 @@ const{ DataTypes } = require('sequelize')
 const sequelize = require("../db")
 
 const poll = sequelize.define(
-    'Poll',
+    'Polls',
     {
         title: {
             type: DataTypes.STRING,
