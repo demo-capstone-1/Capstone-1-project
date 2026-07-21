@@ -41,5 +41,4 @@ async function SeedDatabase(){
         await sequelize.close()
     }
 }
-
 SeedDatabase();
