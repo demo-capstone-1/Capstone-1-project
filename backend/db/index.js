@@ -1,7 +1,7 @@
 const { Sequelize } = require("sequelize")
 require("dotenv").config()
 
-const newConnection = new Sequelize(
+const db = new Sequelize(
     process.env.DB_NAME,
     process.env.DB_USER,
     process.env.DB_PASSWORD,
@@ -12,4 +12,4 @@ const newConnection = new Sequelize(
 }
 );
 
-module.exports = newConnection
+module.exports = db

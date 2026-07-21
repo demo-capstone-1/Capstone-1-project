@@ -1,10 +1,9 @@
-const sequelize = require("../db") // Database Connection
+const db = require("../db") // Database Connection
 const Poll = require("./poll")
 const Option = require("./options")
 const Vote = require("./votes")
 
 // Association
-
 Poll.hasMany(Option, {
     foreignKey: 'pollId',
     as: 'options',
@@ -28,7 +27,7 @@ Vote.belongsTo(Option, {
 });
 
 module.exports = {
-    sequelize,
+    db,
     Poll,
     Option,
     Vote

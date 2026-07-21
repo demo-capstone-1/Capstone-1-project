@@ -1,6 +1,6 @@
 const { sequelize, Option, Vote, Poll } = require("./models")
 
-async function testDatabase(){
+async function SeedDatabase(){
     try{
     // Test the db connection
     await sequelize.authenticate();
@@ -42,4 +42,4 @@ async function testDatabase(){
     }
 }
 
-testDatabase();
+SeedDatabase();
